@@ -17,8 +17,8 @@ LQueue = $(SRC)/LQueue
 #stack: Stack.cpp $(SRC)/Stack.o $(GTEST_MAINA)
 #	$(CPP) $(CFLAGS) $(GTEST_INCLUDES) -pthread -o stack_test $^
 
-queue_test: Queue.cpp $(AQueue)/AQueue.o $(LLQueue)/LLQueue.o $(LQueue)/LQueue.o $(GTEST_MAINA)
-	$(CPP) $(CFLAGS) $(GTEST_INCLUDES) -pthread -o queue_test Queue.cpp $(AQueue)/AQueue.o $(LQueue)/LQueue.o $(LLQueue)/LLQueue.o $(GTEST_MAINA)
+queue_test: Queue.cpp $(AQueue)/AQueue.o $(LLQueue)/LLQueue.o $(LQueue)/LQueue.o $(LLQueue)/Node.o $(GTEST_MAINA)
+	$(CPP) $(CFLAGS) $(GTEST_INCLUDES) -pthread -o queue_test Queue.cpp $(AQueue)/AQueue.o $(LQueue)/LQueue.o $(LLQueue)/LLQueue.o $(LLQueue)/Node.o $(GTEST_MAINA)
 
 $(GTEST_MAINA): $(GTEST)/src/*.cc $(GTEST)/src/*.h
 	cd $(GTEST)/make; make

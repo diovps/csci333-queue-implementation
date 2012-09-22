@@ -15,7 +15,7 @@ all: $(BUILD)/Source $(TEST)/queue_test
 $(BUILD)/Source: 
 	cd $(SRC); $(MAKE)
 
-$(TEST)/queue_test: $(TEST)/Queue.cpp $(AQueue)/AQueue.o $(LQueue)/LQueue.o $(LLQueue)/LLQueue.o
+$(TEST)/queue_test: $(TEST)/Queue.cpp $(AQueue)/AQueue.o $(LQueue)/LQueue.o $(LLQueue)/LLQueue.o $(LLQueue)/Node.o
 	cd $(TEST); $(MAKE)
 
 clean:

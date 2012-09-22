@@ -10,6 +10,8 @@ class LQueue{
 		~LQueue();
 		void enqueue(int number);
 		int dequeue();
+		int size();
+		bool isEmpty();
 		
 };
 

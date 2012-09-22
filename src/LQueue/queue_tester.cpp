@@ -3,7 +3,17 @@
 
 int main(){
 	LQueue* q = new LQueue();
-	q->enqueue(5);
-	std::cout << q->dequeue()<< std::endl;
+	for(int i = 0; i < 16; ++i){
+		q->enqueue(i);
+	}
+	for(int i = 0; i < 6; ++i){
+		q->dequeue();
+	}
+	for(int i = 0; i < 5; ++i){
+		q->enqueue(i);
+	}
+	while(!q->isEmpty()){
+		std::cout << q->dequeue() << std::endl;
+	}
 	return 0;
 }

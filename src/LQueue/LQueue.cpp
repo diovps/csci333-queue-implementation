@@ -20,3 +20,11 @@ int LQueue::dequeue(){
 	theQueue.pop_front();
 	return result;
 }
+
+int LQueue::size(){
+	return theQueue.size();
+}
+
+bool LQueue::isEmpty(){
+	return theQueue.empty();
+}

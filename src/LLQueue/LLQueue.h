@@ -1,15 +1,13 @@
 #ifndef __LLQUEUE_H__
 #define __LLQUEUE_H__
 
+#include "Node.h"
+
 class LLQueue{
 	private:
-		int* theQueue;
-		int front;
-		int back;
-		int currentSize;
-		int capacity;
+		Node* node;
 	public:
-		LLQueue(int initialSize = 10);
+		LLQueue();
 		~LLQueue();
 		void enqueue(int number);
 		int dequeue();
