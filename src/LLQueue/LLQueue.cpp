@@ -9,7 +9,7 @@ LLQueue::LLQueue(){
 }
 
 LLQueue::~LLQueue(){
-	for(int i = 0; i <= currentSize; ++i){
+	for(int i = 0; i < currentSize; ++i){
 		dequeue();
 	}
 }
