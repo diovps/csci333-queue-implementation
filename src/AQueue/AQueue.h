@@ -13,6 +13,7 @@ class AQueue{
 		~AQueue();
 		void enqueue(int number);
 		int dequeue();
+		int size();
 };
 
 #endif

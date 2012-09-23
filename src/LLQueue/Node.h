@@ -10,7 +10,6 @@ class Node{
 		~Node();
 		int getValue();
 		Node* getNext();
-		bool hasNext();
 		void setNext(Node* &n);
 };
 

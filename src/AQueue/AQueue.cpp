@@ -70,3 +70,7 @@ int AQueue::dequeue(){
 	--currentSize;
 	return result;
 }
+
+int AQueue::size(){
+	return currentSize;
+}

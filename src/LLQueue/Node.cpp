@@ -20,7 +20,3 @@ void Node::setNext(Node* &node){
 	next = node;
 }
 
-bool Node::hasNext(){
-	return(next==0);
-}
-

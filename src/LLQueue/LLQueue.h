@@ -8,11 +8,13 @@ class LLQueue{
 		Node* node;
 		Node* front;
 		Node* back;
+		int currentSize;
 	public:
 		LLQueue();
 		~LLQueue();
 		void enqueue(int number);
 		int dequeue();
+		int size();
 };
 
 #endif
