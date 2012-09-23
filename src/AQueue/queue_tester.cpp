@@ -18,5 +18,6 @@ int main(){
 	for(int i = 0; i < 18; ++i){
 		std::cout << q->dequeue() << std::endl;
 	}
+	delete q;
 	return 0;
 }

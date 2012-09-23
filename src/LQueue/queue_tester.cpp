@@ -15,5 +15,6 @@ int main(){
 	while(!q->isEmpty()){
 		std::cout << q->dequeue() << std::endl;
 	}
+	delete q;
 	return 0;
 }
