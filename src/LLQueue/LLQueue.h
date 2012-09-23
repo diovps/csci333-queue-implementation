@@ -6,6 +6,8 @@
 class LLQueue{
 	private:
 		Node* node;
+		Node* front;
+		Node* back;
 	public:
 		LLQueue();
 		~LLQueue();

@@ -21,6 +21,6 @@ void Node::setNext(Node* &node){
 }
 
 bool Node::hasNext(){
-	return(next!=0);
+	return(next==0);
 }
 
