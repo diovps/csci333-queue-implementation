@@ -41,15 +41,30 @@ void AQueue::enqueue(int number){
 
 int AQueue::dequeue(){
 	assert(currentSize>0);
-	/*if((capacity/currentSize)>=4){
-		capacity = capacity/4;
+	int tempCap = capacity;
+	if((capacity/currentSize)>=4){
+		capacity = capacity/2;
 		int* newQueue = new int[capacity];
-		for(int i = front; i <= back; ++i){
-			newQueue[i] = theQueue[i];
+		
+		if(back < front){
+			int diff = tempCap - front;
+			for(int i = front; i < tempCap; ++i){
+				newQueue[i-front] = theQueue[i];
+			}
+			
+			for(int i = 0;i<=back; ++i){
+				newQueue[diff+i] = theQueue[i];
+			}
+		}else{	
+			for(int i = front; i <= back; ++i){
+				newQueue[i-front] = theQueue[i];
+			}
 		}
+		front = 0;
+		back = currentSize;
 		delete[] theQueue;
 		theQueue = newQueue;
-	}*/
+	}
 	int result = theQueue[front];
 	front = (front+1)%capacity;
 	--currentSize;

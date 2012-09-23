@@ -3,6 +3,12 @@
 
 int main(){
 	AQueue* q = new AQueue();
-	q->enqueue(5);
+	for(int i = 0; i < 25; ++i){
+		q->enqueue(i);
+	}
+
+	for(int i = 0; i < 25; ++i){
+		std::cout << q->dequeue() << std::endl;
+	}
 	return 0;
 }
