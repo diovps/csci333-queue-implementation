@@ -8,6 +8,7 @@ class AQueue{
 		int back;
 		int currentSize;
 		int capacity;
+		int threshold;
 	public:
 		AQueue(int initialSize = 10);
 		~AQueue();
