@@ -3,7 +3,7 @@ CPP = g++
 AQueue = AQueue
 LLQueue = LLQueue
 LQueue = LQueue
-CPPFLAGS = -Wall -Wextra
+CPPFLAGS = -Wall -Wextra -Werror -pedantic
 
 all: AQueue LLQueue LQueue
 
@@ -20,3 +20,4 @@ clean:
 	cd AQueue; $(MAKE) clean
 	cd LLQueue; $(MAKE) clean
 	cd LQueue; $(MAKE) clean
+	cd TTest; $(MAKE) clean

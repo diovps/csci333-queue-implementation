@@ -8,7 +8,7 @@ AQueue::AQueue(int initialSize){
 	front = 0;
 	back = 0;
 	currentSize = 0;
-	int threshold = initialSize;
+	threshold = initialSize;
 	capacity = initialSize;
 }
 
