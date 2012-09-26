@@ -3,6 +3,7 @@
 #include <assert.h>
 
 AQueue::AQueue(int initialSize){
+	assert(initialSize>0);
 	theQueue = new int[initialSize];
 	front = 0;
 	back = 0;
@@ -73,4 +74,8 @@ int AQueue::dequeue(){
 
 int AQueue::size(){
 	return currentSize;
+}
+
+bool AQueue::isEmpty(){
+	return currentSize == 0;
 }

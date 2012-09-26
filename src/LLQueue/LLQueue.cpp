@@ -41,3 +41,7 @@ int LLQueue::dequeue(){
 int LLQueue::size(){
 	return currentSize;
 }
+
+bool LLQueue::isEmpty(){
+	return currentSize==0;
+}

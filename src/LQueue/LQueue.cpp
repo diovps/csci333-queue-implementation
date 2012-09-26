@@ -28,3 +28,4 @@ int LQueue::size(){
 bool LQueue::isEmpty(){
 	return theQueue.empty();
 }
+
